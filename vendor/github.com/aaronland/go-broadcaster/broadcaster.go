@@ -5,15 +5,33 @@ import (
 	"fmt"
 	"github.com/aaronland/go-roster"
 	"github.com/aaronland/go-uid"
+	"image"
 	"log"
 	"net/url"
 	"sort"
 	"strings"
 )
 
+// Broadcaster provides a minimalist interface for "broadcasting" messages to an arbitrary service or target.
 type Broadcaster interface {
+	// BroadcastMessage "broadcasts" a `Message` struct.
 	BroadcastMessage(context.Context, *Message) (uid.UID, error)
+	// SetLogger assigns a specific `log.Logger` instance to be used for logging messages.
 	SetLogger(context.Context, *log.Logger) error
+}
+
+// Message defines a struct containing properties to "broadcast". The semantics of these
+// properties are determined by the server or target -specific implementation of the `Broadcaster`
+// interface.
+type Message struct {
+	// Title is a string to use as the title of a "broadcast" message.
+	Title string
+	// Body is a string to use as the body of a "broadcast" message.
+	Body string
+	// Images is zero or more `image.Image` instances to be included with a "broadcast" messages.
+	// Images are encoded according to rules implemented by service or target -specific implementation
+	// of the `Broadcaster` interface.
+	Images []image.Image
 }
 
 var broadcaster_roster roster.Roster

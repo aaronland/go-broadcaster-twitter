@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/ChimeraCoder/anaconda v2.0.0+incompatible
-	github.com/aaronland/go-broadcaster v0.0.5
+	github.com/aaronland/go-broadcaster v0.0.7
 	github.com/aaronland/go-image-encode v0.0.0-20200215191655-047f61aedbfe
 	github.com/aaronland/go-uid v0.4.0
 	github.com/sfomuseum/runtimevar v1.0.2

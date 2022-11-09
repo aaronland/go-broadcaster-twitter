@@ -7,11 +7,10 @@ github.com/ChimeraCoder/tokenbucket
 # github.com/aaronland/go-aws-session v0.0.6
 ## explicit; go 1.12
 github.com/aaronland/go-aws-session
-# github.com/aaronland/go-broadcaster v0.0.5
+# github.com/aaronland/go-broadcaster v0.0.7
 ## explicit; go 1.19
 github.com/aaronland/go-broadcaster
 github.com/aaronland/go-broadcaster/app/broadcast
-github.com/aaronland/go-broadcaster/oauth
 # github.com/aaronland/go-image-encode v0.0.0-20200215191655-047f61aedbfe
 ## explicit; go 1.12
 github.com/aaronland/go-image-encode

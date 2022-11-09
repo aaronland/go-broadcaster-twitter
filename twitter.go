@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"github.com/ChimeraCoder/anaconda"
 	"github.com/aaronland/go-broadcaster"	
-	"github.com/aaronland/go-broadcaster/oauth"
+	"github.com/aaronland/go-broadcaster-twitter/oauth"
 	"github.com/aaronland/go-image-encode"
 	"github.com/aaronland/go-uid"
 	"github.com/sfomuseum/runtimevar"
